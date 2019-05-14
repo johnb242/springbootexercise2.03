@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/songform}" th:object="${song}"
+      method="post">
+    first name <input type="text" th:field="*{first_name}" /><br />
+    last name<input type="text" th:field="*{last_name}" /><br />
+    ssn <input type="number" th:field="*{social_security_number}" /><br />
+    dob <input type="number" th:field="*{date_of_birth}" /><br />
+    <input type="submit" value="Submit" />
+
+</form>
+</body>
+</html>
